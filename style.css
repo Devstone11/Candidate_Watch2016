@@ -1,0 +1,123 @@
+body {
+  height: 100%;
+  background: linear-gradient( black, #575E5C );
+  color: white;
+}
+
+header {
+  font-family: pacifico;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 15px;
+}
+
+h2 {
+  margin: 0;
+  font-family: milkshake;
+}
+
+.headshots {
+  display: flex;
+  justify-content: space-around;
+}
+
+.headshot {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.headshot-background {
+  height: 200px;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.bang {
+  height: 360px;
+  width: 400px;
+  position: absolute;
+}
+
+#hillary-headshot .bang {
+  top: -200px;
+  left: -200px;
+}
+
+#trump-headshot .bang {
+  top: -210px;
+  right: -215px;
+}
+
+.headshot span {
+  position: absolute;
+  color: black;
+  font-size: 36px;
+}
+
+#hillary-bang {
+  transform: rotate(-40deg);
+  left: -85px;
+  top: -35px;
+}
+
+#trump-bang {
+  transform: rotate(40deg);
+  right: -90px;
+  top: -40px;
+}
+
+.button {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 3px 15px;
+}
+
+#twitter-button {
+  background-color: #55acee;
+}
+
+#twitter-button img {
+  width: 80%;
+  margin: 10px;
+}
+
+#facebook-button {
+  background-color: #3B579D;
+}
+
+#facebook-button img {
+  width: 72%;
+  margin: 11px;
+}
+
+#media-button {
+  background-color: #A4180E;
+}
+
+#media-button img {
+  width: 60%;
+  margin: 17px;
+}
+
+a {
+  color: white;
+}
+
+.articles {
+  display: inline-block;
+  width: 40%;
+}
+
+/*font-family: 'Open Sans', arial, sans-serif;*/
