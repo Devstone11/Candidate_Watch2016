@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div id="background"></div>
     <header>
       <h1>Candidate Watch 2016</h1>
       <h2>What are they up to?</h2>
@@ -34,13 +35,27 @@
       </div>
     </header>
     <main>
-      <section id="twitter"> What they're Tweeting:
-        <a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark" data-chrome="transparent" href="https://twitter.com/HillaryClinton">Tweets by HillaryClinton</a>
-        <a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark" data-chrome="transparent" href="https://twitter.com/realDonaldTrump">Tweets by realDonaldTrump</a>
+      <section id="twitter">
+        <h2>What they're Tweeting:</h2>
+        <div class="timelines">
+          <div class="box">
+            <a class="twitter-timeline" data-width="400" data-height="100%" data-theme="dark" data-chrome="transparent" href="https://twitter.com/HillaryClinton">Tweets by HillaryClinton</a>
+          </div>
+          <div class="box">
+            <a class="twitter-timeline" data-width="400" data-height="100%" data-theme="dark" data-chrome="transparent" href="https://twitter.com/realDonaldTrump">Tweets by realDonaldTrump</a>
+          </div>
+        </div>
       </section>
-      <section id="facebook"> What they're posting:
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhillaryclinton%2F%3Ffref%3Dts&tabs=timeline&width=400&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1561544894148350" width="400" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDonaldTrump%2F%3Ffref%3Dts&tabs=timeline&width=400&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1561544894148350" width="400" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      <section id="facebook">
+        <h2>What they're posting:</h2>
+        <div class="timelines">
+          <div class="box">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhillaryclinton%2F%3Ffref%3Dts&tabs=timeline&width=400&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1561544894148350" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          </div>
+          <div class="box">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDonaldTrump%2F%3Ffref%3Dts&tabs=timeline&width=400&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1561544894148350" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          </div>
+        </div>
       </section>
       <section id="media"> Media Coverage:
         <div id="nytimes"> New York Times:
