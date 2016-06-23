@@ -112,3 +112,26 @@ callApi("NPR", "https://api.npr.org/query?fields=title,teaser,storyDate,byline,t
 callApi("NPR", "https://api.npr.org/query?fields=title,teaser,storyDate,byline,transcript&searchTerm=", "Hillary%20Clinton", "&dateType=story&output=JSON&numResults=20&apiKey=MDI0ODU5MzA5MDE0NjY0NjE3NzYyMmEyOA000", "#clinton-npr")
 callApi("The Guardian", "https://content.guardianapis.com/search?q=", "hillary+clinton", "&api-key=385a3c1d-2622-4ecf-b191-12805b5f0645", "#clinton-guardian");
 callApi("The Guardian", "https://content.guardianapis.com/search?q=", "donald+trump", "&api-key=385a3c1d-2622-4ecf-b191-12805b5f0645", "#trump-guardian");
+
+
+$('.top-link').hover(function(e) {
+  $(this).toggleClass("top-link-hover");
+})
+
+$('.button').hover(function(e) {
+  $(this).toggleClass("button-hover");
+})
+
+$('.facebook-button').mouseenter(function(e) {
+  $(this).toggleClass("fb-button-hover");
+  $('.facebook-button-bkgnd img').hide();
+  $('.facebook-button-bkgnd').append($("<img class='replacement-fb' src='images/FB-f-Logo__white_512.png' alt='facebook-logo'/>"))
+  $('.facebook-button-bkgnd').css("background-color", "#3B579D");
+})
+
+$('.facebook-button').mouseleave(function(e) {
+  $(this).toggleClass("fb-button-hover");
+  $('.facebook-button-bkgnd img').show();
+  $('.facebook-button-bkgnd').css("background-color", "white");
+  $('.replacement-fb').hide();
+})

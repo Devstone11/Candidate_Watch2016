@@ -113,37 +113,56 @@ nav a {
   text-decoration: none;
 }
 
-#twitter-button {
+.twitter-button {
   background-color: #55acee;
 }
 
-#twitter-button img {
+.twitter-button img {
   width: 80%;
   margin: 10px;
 }
 
-#facebook-button {
+.facebook-button {
   background-color: #3B579D;
 }
 
-#facebook-button img {
+.facebook-button img {
+  width: 100%;
+}
+.facebook-button-bkgnd {
   width: 72%;
+  height: 72%;
   margin: 11px;
+  background-color: white;
+  border-radius: 5px;
 }
 
-#media-button {
+.media-button {
   background-color: #A4180E;
 }
 
-#media-button img {
+.media-button img {
   width: 60%;
   margin: 17px;
+}
+
+.button-hover {
+  background-color: black;
+}
+
+.fb-button-hover {
+  background: white;
 }
 
 section {
   height: 100vh;
   min-height: 560px;
   margin-top: 30px;
+}
+
+.top-link-hover {
+  background-color: #525957;
+  border-radius: 100%;
 }
 
 .timelines {
@@ -195,6 +214,7 @@ h3 {
 
 #media {
   height: 200%;
+  position: relative;
 }
 
 #media .timelines {
