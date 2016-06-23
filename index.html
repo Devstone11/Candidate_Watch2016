@@ -2,12 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Q1 Project</title>
+    <title>Candidate Watch 2016</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/explosion-icon-9152.png" />
   </head>
   <body>
     <div id="background"></div>
     <header>
+      <a name="top"></a>
       <h1>Candidate Watch 2016</h1>
       <h2>What are they up to?</h2>
       <div class="headshots">
@@ -22,21 +24,33 @@
           <span id="trump-bang">Donald!</span>
         </div>
       </div>
-      <div id="buttons">
-        <div class="button" id="twitter-button">
-          <img src="images/TwitterLogo_white.png" alt="twitter-logo"/>
-        </div>
-        <div class="button" id="facebook-button">
-          <img src="images/FB-f-Logo__blue_512.png" alt="facebook-logo"/>
-        </div>
-        <div class="button" id="media-button">
-          <img src="images/paper-list-hand-drawn-symbol.png" alt="media-logo"/>
-        </div>
-      </div>
+      <nav>
+        <a href="#twitter-section">
+          <div class="button" id="twitter-button">
+            <img src="images/TwitterLogo_white.png" alt="twitter-logo"/>
+          </div>
+        </a>
+        <a href="#facebook-section">
+          <div class="button" id="facebook-button">
+            <img src="images/FB-f-Logo__blue_512.png" alt="facebook-logo"/>
+          </div>
+        </a>
+        <a href="#media-section">
+          <div class="button" id="media-button">
+                <img src="images/paper-list-hand-drawn-symbol.png" alt="media-logo"/>
+          </div>
+        </a>
+      </nav>
     </header>
     <main>
       <section id="twitter">
-        <h2>What they're Tweeting:</h2>
+        <a name="twitter-section"></a>
+        <h2>
+          <a href="#top">
+            <img src="images/arrow-158-128.png" alt="up-arrow" />
+          </a>
+          What they're Tweeting:
+        </h2>
         <div class="timelines">
           <div class="box">
             <a class="twitter-timeline" data-width="400" data-height="100%" data-theme="dark" data-chrome="transparent" href="https://twitter.com/HillaryClinton">Tweets by HillaryClinton</a>
@@ -47,7 +61,13 @@
         </div>
       </section>
       <section id="facebook">
-        <h2>What they're posting:</h2>
+        <a name="facebook-section"></a>
+        <h2>
+          <a href="#top">
+            <img src="images/arrow-158-128.png" alt="up-arrow" />
+          </a>
+          What they're posting:
+        </h2>
         <div class="timelines">
           <div class="box">
             <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhillaryclinton%2F%3Ffref%3Dts&tabs=timeline&width=400&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1561544894148350" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
@@ -57,18 +77,53 @@
           </div>
         </div>
       </section>
-      <section id="media"> Media Coverage:
-        <div id="nytimes"> New York Times:
-          <ul class="articles" id="clinton-nyt"></ul>
-          <ul class="articles" id="trump-nyt"></ul>
+      <section id="media">
+        <a name="media-section"></a>
+        <h2>
+          <a href="#top">
+            <img src="images/arrow-158-128.png" alt="up-arrow" />
+          </a>
+          Media coverage:
+        </h2>
+        <div class="media-pics">
+          <img class="headshot-background" src="https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/12662579_1071050289618166_3671513253281337451_n.png?oh=1284868ae36dbf6da92d733daba94648&oe=57D3689C">
+          <h3>The New York Times says...</h3>
+          <img class="headshot-background" src="https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/557493_10151443611110725_645976657_n.jpg?oh=4be9f583d0204ad98bffe74d67255168&oe=57C8DFF6" alt="trump-pic" />
         </div>
-        <div id="npr"> NPR:
-          <ul class="articles" id="clinton-npr"></ul>
-          <ul class="articles" id="trump-npr"></ul>
+        <div class="timelines" id="nyt">
+          <div class="box">
+            <ul class="articles" id="clinton-nyt"></ul>
+          </div>
+          <div class="box">
+            <ul class="articles" id="trump-nyt"></ul>
+          </div>
+        </div>
+        <h3>NPR says...</h3>
+        <div class="timelines" id="npr">
+          <div class="box">
+            <ul class="articles" id="clinton-npr"></ul>
+          </div>
+          <div class="box">
+            <ul class="articles" id="trump-npr"></ul>
+          </div>
+        </div>
+        <h3>The Guardian says...</h3>
+        <div class="timelines" id="guardian">
+          <div class="box">
+            <ul class="articles" id="clinton-guardian"></ul>
+          </div>
+          <div class="box">
+            <ul class="articles" id="trump-guardian"></ul>
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <small>
+        Article icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.
+        Explosion icons from <a href="http://www.freeiconspng.com/free-images/explosion-icon-9152">freeiconspng.com</a>.
+      </small>
+    </footer>
     <script   src="https://code.jquery.com/jquery-3.0.0.js"   integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo="   crossorigin="anonymous"></script>
     <script type="text/javascript" src="app.js"></script>
   </body>
