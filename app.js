@@ -113,11 +113,6 @@ callApi("NPR", "https://api.npr.org/query?fields=title,teaser,storyDate,byline,t
 callApi("The Guardian", "https://content.guardianapis.com/search?q=", "hillary+clinton", "&api-key=385a3c1d-2622-4ecf-b191-12805b5f0645", "#clinton-guardian");
 callApi("The Guardian", "https://content.guardianapis.com/search?q=", "donald+trump", "&api-key=385a3c1d-2622-4ecf-b191-12805b5f0645", "#trump-guardian");
 
-
-$('.top-link').hover(function(e) {
-  $(this).toggleClass("top-link-hover");
-})
-
 $('.button').hover(function(e) {
   $(this).toggleClass("button-hover");
 })

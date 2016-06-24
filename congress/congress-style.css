@@ -1,0 +1,161 @@
+body {
+  color: white;
+  font-family: milkshake;
+  padding: 0px;
+}
+
+#background {
+  height: 106%;
+  width: 102%;
+  background: linear-gradient( black, #575E5C );
+  position: fixed;
+  z-index: -1;
+  margin: -2%;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 560px;
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 2vh;
+  font-family: pacifico;
+  display: relative;
+  z-index: 2;
+}
+
+h1 a img {
+  transform: rotate(270deg);
+  height: 40px;
+  position: absolute;
+  left: 2%;
+  top: 13px;
+}
+
+#flag {
+  position: absolute;
+  z-index: -1;
+  bottom: -160px;
+  right: -390px;
+  transform: rotate(295deg);
+  height: 640px;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  display: relative;
+  z-index: 2;
+}
+
+select {
+  font-size: 20px;
+  border: 5px black solid;
+}
+
+button {
+  width: 120px;
+  height: 65px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  font-family: milkshake;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  margin-top: 20px;
+}
+
+button:hover {
+    background-color: #535A58;
+    color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+#pick-state, select {
+  margin-top: 15vh;
+}
+
+.results {
+  border: 2px solid white;
+  position: absolute;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 15px;
+  height: 220px;
+  width: 200px;
+  overflow: scroll;
+  margin-left: 50%;
+  left: -115px;
+  font-size: 18px;
+}
+
+.results div {
+  text-decoration: underline;
+}
+
+section{
+  padding: 30px 0px;
+  font-size: 30px;
+  height: 100vh;
+  min-height: 560px;
+}
+
+.timelines {
+  display: flex;
+  justify-content: space-around;
+  height: 430px;
+}
+
+a {
+  color: white;
+}
+
+.name-card {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.name img {
+  height: 40px;
+  position: absolute;
+  left: 5%;
+  top: 13px;
+}
+
+.name-card div:nth-child(n+2) {
+  font-size: 18px;
+}
+
+.box {
+  height: 100%;
+  width: 400px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 15px;
+  display: inline-block;
+}
+
+iframe {
+  width: 400px;
+  height: 100%;
+  overflow: hidden;
+  border: none;
+}
+
+.top-link:hover {
+  background-color: #525957;
+  border-radius: 100%;
+}

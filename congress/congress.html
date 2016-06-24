@@ -2,23 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <a name="top"></a>
     <title>Candidate Watch 2016</title>
     <link rel="stylesheet" href="congress-style.css">
     <link rel="icon" type="image/png" href="images/explosion-icon-9152.png" />
   </head>
   <body>
-    <div id="background"></div>
+    <div id="background">
+      <img id="flag" src="../images/united_states_of_america_fluttering_flag_640.png"/>
+    </div>
     <header>
       <a name="top"></a>
-      <h1>Congress Watch 2016</h1>
+      <h1>
+        <a href="../index.html">
+          <img src="../images/arrow-158-128.png"/>
+        </a>
+        Congress Watch 2016
+      </h1>
       <h2>Pick Your State!</h2>
-      <select class="" name=""></select>
-      <input type="button" name="name" value="click">
+      <select></select>
+      <div>
+        <button class="hidden" id="reset" type="reset">Switch States</button>
+        <button id="pick-state" type="button">Show My Legislators</button>
+      </div>
+      <div class="results hidden"></div>
     </header>
     <main></main>
-    <footer>
-      <small></small>
-    </footer>
+    <footer></footer>
     <script src="https://code.jquery.com/jquery-3.0.0.js"   integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo="   crossorigin="anonymous"></script>
     <script type="text/javascript" src="congress.js"></script>
   </body>
