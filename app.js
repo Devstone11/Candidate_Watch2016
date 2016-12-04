@@ -106,12 +106,16 @@ function appendArticle(sectionToAppend, link, headline, source, date, teaser) {
   $(sectionToAppend).append(`<li><a href= ${link} target="_blank"> ${headline}</a> - ${source}, ${date}</li> ${teaser}`);
 }
 
-callApi("New York Times", "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=", "hillary+clinton", "&sort=newest&api-key=f8a1d16405da44bb82a31378767bb5ff", "#clinton-nyt")
 callApi("New York Times", "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=", "donald+trump", "&sort=newest&api-key=f8a1d16405da44bb82a31378767bb5ff", "#trump-nyt")
+setTimeout(delayedNYTCall, 1000);
 callApi("NPR", "https://api.npr.org/query?fields=title,teaser,storyDate,byline,transcript&searchTerm=", "Donald%20Trump", "&dateType=story&output=JSON&numResults=20&apiKey=MDI0ODU5MzA5MDE0NjY0NjE3NzYyMmEyOA000", "#trump-npr")
 callApi("NPR", "https://api.npr.org/query?fields=title,teaser,storyDate,byline,transcript&searchTerm=", "Hillary%20Clinton", "&dateType=story&output=JSON&numResults=20&apiKey=MDI0ODU5MzA5MDE0NjY0NjE3NzYyMmEyOA000", "#clinton-npr")
 callApi("The Guardian", "https://content.guardianapis.com/search?q=", "hillary+clinton", "&api-key=385a3c1d-2622-4ecf-b191-12805b5f0645", "#clinton-guardian");
 callApi("The Guardian", "https://content.guardianapis.com/search?q=", "donald+trump", "&api-key=385a3c1d-2622-4ecf-b191-12805b5f0645", "#trump-guardian");
+
+function delayedNYTCall () {
+  callApi("New York Times", "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=", "hillary+clinton", "&sort=newest&api-key=f8a1d16405da44bb82a31378767bb5ff", "#clinton-nyt");
+}
 
 $('.button').hover(function(e) {
   $(this).toggleClass("button-hover");
